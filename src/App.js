@@ -1,8 +1,10 @@
 import React from 'react';
-
+import profileImage from './imagens/profile.jpg'
 import { Nav, Navbar, Container } from 'react-bootstrap';
+
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import './App.css'
+import { FiDownload } from "react-icons/fi";
+import './App.css';
 
 const App = () => {
   return (
@@ -36,11 +38,13 @@ const App = () => {
 
       <div className='container'>
         <div className='info'>
-          <p className='info-item'>Olá, seja bem-vindo, eu sou <br></br><strong id='name'>Guilherme Magarotti</strong><br></br>Desenvolvedor Front-End</p>
+          <p className='info-item'>Olá, eu sou <br></br><strong id='name'>Guilherme Magarotti</strong><br></br>Desenvolvedor Front-End</p>
+          <button id="cv-button">Currículo <FiDownload /></button>
+
         </div>
-        <div className='img'>
-          <img src="" width="100px" height="100px"></img>
-        </div>
+          <div className='img'>
+            <img src={profileImage} alt="Imagem de Perfil" width="100px" height="100px" id="cfg-img" />
+          </div>
       </div>  
     </>
   );
