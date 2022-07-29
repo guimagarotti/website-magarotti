@@ -9,6 +9,7 @@ Esse projeto é o meu portfólio para alocar realizações pessoais, ou seja, um
 
 - HTML5;
 - CSS3;
+- SASS;
 - Bootstrap;
 - JavaScript ES6;
 - ReactJS;
