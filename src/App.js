@@ -43,8 +43,8 @@ const App = () => {
 
         <div class="cartoes-sobre">
           <article className='card-layout'>
-            <div class="img">
-              <img src={enfeiteImage01} alt="Foto Enfeite" width={160} height={110} id="config-image" />
+            <div className="img">
+              <img src={enfeiteImage01} alt="Foto Enfeite" width={180} height={110} id="config-image" />
             </div>
             
             <div className='card'>
@@ -58,8 +58,8 @@ const App = () => {
           </article>
           
           <article className='card-layout'>
-            <div class="img">
-              <img src={enfeiteImage02} alt="Foto Enfeite" width={160} height={110} id="config-image" />
+            <div className="img">
+              <img src={enfeiteImage02} alt="Foto Enfeite" width={180} height={110} id="config-image" />
             </div>
 
             <div className='card'>
