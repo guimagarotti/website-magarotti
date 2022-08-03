@@ -513,6 +513,23 @@ body {
     }
 } 
 
+/*Skills*/
+.container-skills {
+    background-image: linear-gradient(to left, #cf8901, #422008);
+    min-width: 100%;
+    min-height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #111111;
+
+    .skills-style {
+        background-color: #fff;
+        border: 1px solid black;
+    }
+}
+
 
 
 

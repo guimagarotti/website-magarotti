@@ -6,6 +6,15 @@ import { Figure } from 'react-bootstrap';
 import profileImage from "./assets/images/profile.jpg";
 import enfeiteImage01 from "./assets/images/enfeite.jpg";
 import enfeiteImage02 from "./assets/images/post.jpg";
+import logoHTML from "./assets/images/logo-html.png";
+import logoCSS from "./assets/images/logo-css.png";
+import logoBOOTSTRAP from "./assets/images/logo-bootstrap.png";
+import logoSASS from "./assets/images/logo-sass.png";
+import logoJS from "./assets/images/logo-js.png";
+import logoREACT from "./assets/images/logo-react.png";
+import logoGIT from "./assets/images/logo-git.png";
+import logoGITHUB from "./assets/images/logo-github.png";
+
 
 import { FiDownload } from "react-icons/fi";
 import { RiProfileLine } from 'react-icons/ri';
@@ -71,6 +80,19 @@ const App = () => {
               </ul>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section className='container-skills'>
+        <div class="skills-style">
+          <img src={logoHTML} alt="Logo HTML" width={110} height={100} />
+          <img src={logoCSS} alt="Logo CSS" width={110} height={100} />
+          <img src={logoBOOTSTRAP} alt="Logo BOOTSTRAP" width={110} height={100} />
+          <img src={logoSASS} alt="Logo SASS" width={110} height={100} />
+          <img src={logoJS} alt="Logo JS" width={110} height={100} />
+          <img src={logoREACT} alt="Logo REACT" width={110} height={80} />
+          <img src={logoGIT} alt="Logo GIT" width={110} height={100} />
+          <img src={logoGITHUB} alt="Logo GITHUB" width={110} height={100} />
         </div>
       </section>
     </>

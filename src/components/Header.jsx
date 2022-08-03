@@ -20,6 +20,9 @@ const Header = () => {
               <Nav.Link eventKey="link-1" className="nav-text" style={{color: '#d4a470'}}>Sobre</Nav.Link>
               </Nav.Item>
               <Nav.Item>
+              <Nav.Link eventKey="link-1" className="nav-text" style={{color: '#d4a470'}}>Skills</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
               <Nav.Link eventKey="link-2" className="nav-text" style={{color: '#d4a470'}}>Projetos</Nav.Link>
               </Nav.Item>
               <Nav.Item>
