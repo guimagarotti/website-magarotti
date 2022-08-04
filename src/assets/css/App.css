@@ -554,5 +554,70 @@ body::-webkit-scrollbar-thumb {
     height: 26px;
   }
 }
+/*Projetos*/
+.conteudo-projetos {
+  background-image: linear-gradient(to right, #bfbfbf, #f3f3f3);
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #111111;
+}
+.conteudo-projetos .title-projetos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.conteudo-projetos .title-projetos p {
+  color: #422008;
+  font-size: 1.3rem;
+  margin: 20px 0;
+}
+.conteudo-projetos .cards-projetos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  animation: cardAnimation 2s;
+}
+.conteudo-projetos .cards-projetos .card-style {
+  border: 1px solid #111111;
+  margin-bottom: 30px;
+  background-image: linear-gradient(to right, #cf8901, #422008);
+  color: white;
+}
+.conteudo-projetos .cards-projetos .card-style .card-image {
+  height: 105px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.conteudo-projetos .cards-projetos .card-style .btn-card {
+  background-color: #f3f3f3;
+  color: black;
+  width: 75%;
+  height: 35px;
+  margin: auto;
+  border: 0;
+  border-radius: 5px;
+}
+.conteudo-projetos .cards-projetos .card-style .btn-card:hover {
+  transition: all 0.6s ease;
+  background-color: #000;
+  border: 0;
+  color: white;
+}
+.conteudo-projetos .cards-projetos .card-style:hover {
+  box-shadow: 2px 3px 8px rgba(12, 12, 12, 0.7);
+}
+
+@keyframes cardAnimation {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
 
 /*# sourceMappingURL=App.css.map */

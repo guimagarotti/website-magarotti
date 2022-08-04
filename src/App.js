@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from './components/Header';
+import Cards from './components/Cards';
 import { Figure } from 'react-bootstrap';
 
 import profileImage from "./assets/images/profile.jpg";
@@ -85,7 +86,7 @@ const App = () => {
       <section className='container-skills'>
         <article className="conteudo-skills">
           <div className="skills-title">
-            <p>Skills</p>
+            <p>Hard Skills</p>
           </div>
           <div className="skills-images">
             <img src={logoHTML} alt="Logo HTML" width={60} height={50} />
@@ -98,6 +99,8 @@ const App = () => {
           </div>
         </article>
       </section>
+
+      <Cards />
     </>
   );
 }
