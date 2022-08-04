@@ -8,7 +8,6 @@ import enfeiteImage01 from "./assets/images/enfeite.jpg";
 import enfeiteImage02 from "./assets/images/post.jpg";
 import logoHTML from "./assets/images/logo-html.png";
 import logoCSS from "./assets/images/logo-css.png";
-import logoBOOTSTRAP from "./assets/images/logo-bootstrap.png";
 import logoSASS from "./assets/images/logo-sass.png";
 import logoJS from "./assets/images/logo-js.png";
 import logoREACT from "./assets/images/logo-react.png";
@@ -50,7 +49,7 @@ const App = () => {
           <p className='formacao'>Eu sou estudante de <span className='destaque'>Análise e Desenvolvimento de Sistemas</span> na universidade <span className='destaque'>FACENS</span>, em Sorocaba-SP. Além disso, estudo diariamente a área de Desenvolvimento Web, especificamente o setor <span className='destaque'>Front-End</span>, com a base HTML5, CSS3 e JS, pois adoro desenvolver páginas e softwares utilizando design + programação.</p>
         </article>
 
-        <div class="cartoes-sobre">
+        <div className="cartoes-sobre">
           <article className='card-layout'>
             <div className="img">
               <img src={enfeiteImage01} alt="Foto Enfeite" width={180} height={110} id="config-image" />
@@ -74,9 +73,9 @@ const App = () => {
             <div className='card'>
               <ul className='card-list'>
                 <p className='list-title'>Hobbies</p>
-                <li className='list-item'>Jogos de FPS</li>
+                <li className='list-item'>Video-games</li>
                 <li className='list-item'>Futebol</li>
-                <li className='list-item'>Academia</li>
+                <li className='list-item'>Filmes / Séries</li>
               </ul>
             </div>
           </article>
@@ -84,16 +83,20 @@ const App = () => {
       </section>
 
       <section className='container-skills'>
-        <div class="skills-style">
-          <img src={logoHTML} alt="Logo HTML" width={110} height={100} />
-          <img src={logoCSS} alt="Logo CSS" width={110} height={100} />
-          <img src={logoBOOTSTRAP} alt="Logo BOOTSTRAP" width={110} height={100} />
-          <img src={logoSASS} alt="Logo SASS" width={110} height={100} />
-          <img src={logoJS} alt="Logo JS" width={110} height={100} />
-          <img src={logoREACT} alt="Logo REACT" width={110} height={80} />
-          <img src={logoGIT} alt="Logo GIT" width={110} height={100} />
-          <img src={logoGITHUB} alt="Logo GITHUB" width={110} height={100} />
-        </div>
+        <article className="conteudo-skills">
+          <div className="skills-title">
+            <p>Skills</p>
+          </div>
+          <div className="skills-images">
+            <img src={logoHTML} alt="Logo HTML" width={60} height={50} />
+            <img src={logoCSS} alt="Logo CSS" width={60} height={50} />
+            <img src={logoSASS} alt="Logo SASS" width={60} height={50} />
+            <img src={logoJS} alt="Logo JS" width={60} height={50} />
+            <img src={logoREACT} alt="Logo REACT" width={80} height={50} id="special"/>
+            <img src={logoGIT} alt="Logo GIT" width={60} height={50} />
+            <img src={logoGITHUB} alt="Logo GITHUB" width={60} height={50} />
+          </div>
+        </article>
       </section>
     </>
   );

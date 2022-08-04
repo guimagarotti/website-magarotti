@@ -129,13 +129,13 @@ body {
         .info-item {
             color: #fff;
             font-weight: bold;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             line-height: 1.3rem;
         }
         
         #name {
             color: #111111;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         #cv-button {
@@ -144,6 +144,7 @@ body {
             width: 60%;
             height: 30px;
             margin: auto;
+            font-size: 0.85rem;
             border: 0;
             border-radius: 10px;
             
@@ -171,7 +172,7 @@ body {
         
         #name {
             color: #111111;
-            font-size: 1.8rem;            
+            font-size: 1.7rem;            
         }        
     }
     
@@ -517,17 +518,178 @@ body {
 .container-skills {
     background-image: linear-gradient(to left, #cf8901, #422008);
     min-width: 100%;
-    min-height: 45vh;
+    min-height: 40vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid #111111;
 
-    .skills-style {
-        background-color: #fff;
-        border: 1px solid black;
+    .conteudo-skills {
+        background-color: #f3f3f3;
+        width: 60%;
+        border: 1px solid #111111;
+        box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+
+        .skills-title {
+            color: #422008;
+            text-align: center;
+            padding-bottom: 5px;
+            font-size: 1.5rem;
+        }
+
+        .skills-images {
+            margin: 0px 6px 20px 0px;
+            text-align: center;
+
+            img {
+                margin: 0 7px;
+            }
+        }
     }
+}
+
+/*Responsividade - Skills*/
+@media (min-width: 760px) and (max-width: 950px) {
+    .container-skills {
+        .conteudo-skills {
+            width: 55%;
+
+            .skills-images {
+                display: block;
+                
+                img {
+                    margin: 3px 10px;
+                }
+            }
+
+        }
+    }    
+}
+@media (max-width: 561px) {
+    .container-skills {
+        height: 50vh;
+
+        .conteudo-skills {
+            width: 63%;
+
+            .skills-images {
+                display: block;
+                
+                img {
+                    margin: 3px 10px;
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 532px) {
+    .container-skills {
+        height: 60vh;
+
+        .conteudo-skills {
+            width: 55%;
+        }
+    }    
+}
+@media (max-width: 464px) {
+    .container-skills {
+        height: 70vh;
+        
+        .conteudo-skills {
+            width: 45%;
+            justify-content: center;
+            align-items: center;
+        }
+    }    
+}
+@media (max-width: 388px) {
+    .container-skills {
+        height: 50vh;
+        
+        .conteudo-skills {
+            width: 80%;
+            height: 40vh;
+
+            .skills-title {
+                padding-bottom: 0px;
+                font-size: 1.3rem;
+            }
+
+            .skills-images {
+                img {
+                    margin: 3px;
+                    width: 52px;
+                    height: 52px;
+
+                    &#special {
+                        height: 42px;
+                    }
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 332px) {
+    .container-skills {
+        .conteudo-skills {
+            width: 60%;
+            height: 45vh;
+            
+            .skills-images {
+                img {
+                    width: 50px;
+                    height: 40px;
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 307px) {
+    .container-skills {
+        .conteudo-skills {
+            width: 55%;
+            height: 42vh;
+
+            .skills-title {
+                padding-bottom: 0px;
+            }
+
+            .skills-images {
+                img {
+                    width: 38px;
+                    height: 38px;                  
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 268px) {
+    .container-skills {
+        .conteudo-skills {
+            width: 60%;
+            height: 40vh;
+
+            .skills-title {
+                padding-bottom: 0px;
+                font-size: 1.3rem;
+            }
+
+            .skills-images {
+                img {
+                    width: 38px;
+                    margin: 1px;
+                    height: 38px;
+                    
+                    &#special {
+                        height: 26px;
+                    }
+                }
+            }
+        }
+    }    
 }
 
 
