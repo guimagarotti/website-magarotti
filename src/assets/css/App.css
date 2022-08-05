@@ -17,11 +17,37 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
+/*Images Animation*/
+@keyframes imageAnimation {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes nameAnimation {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes cardAnimation {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
 /*Nav e Navbar*/
 #nav-title {
   font-size: 1.3rem;
   font-family: "Lexend Deca", sans-serif;
   color: #f3f3f3;
+  animation: nameAnimation 2s;
 }
 #nav-title:hover {
   font-weight: bold;
@@ -73,6 +99,7 @@ body::-webkit-scrollbar-thumb {
   margin: auto;
   border: 0;
   border-radius: 10px;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
 }
 #cv-button:hover {
   transition: all 0.6s ease;
@@ -86,6 +113,7 @@ body::-webkit-scrollbar-thumb {
   margin: auto;
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
   border-radius: 10px;
+  animation: imageAnimation 1s;
 }
 
 /*Responsividade - Inicio*/
@@ -222,6 +250,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   width: 100%;
+  animation: imageAnimation 1s;
 }
 .container-sobre .cartoes-sobre .card-layout {
   display: flex;
@@ -419,7 +448,7 @@ body::-webkit-scrollbar-thumb {
 .container-skills {
   background-image: linear-gradient(to left, #cf8901, #422008);
   min-width: 100%;
-  min-height: 40vh;
+  min-height: 45vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -429,7 +458,7 @@ body::-webkit-scrollbar-thumb {
 }
 .container-skills .conteudo-skills {
   background-color: #f3f3f3;
-  width: 60%;
+  width: 45%;
   border: 1px solid #111111;
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
   border-radius: 10px;
@@ -437,24 +466,32 @@ body::-webkit-scrollbar-thumb {
 .container-skills .conteudo-skills .skills-title {
   color: #422008;
   text-align: center;
-  padding-bottom: 5px;
+  padding-top: 15px;
   font-size: 1.5rem;
 }
 .container-skills .conteudo-skills .skills-images {
-  margin: 0px 6px 20px 0px;
+  margin: -15px 5px 20px 0px;
   text-align: center;
 }
 .container-skills .conteudo-skills .skills-images img {
-  margin: 0 7px;
+  margin: 0 5px;
 }
 
 /*Responsividade - Skills*/
+@media (min-width: 950px) {
+  .container-skills .conteudo-skills .skills-images #special {
+    margin: 0 -20px;
+  }
+}
 @media (min-width: 760px) and (max-width: 950px) {
   .container-skills .conteudo-skills {
-    width: 55%;
+    width: 65%;
   }
   .container-skills .conteudo-skills .skills-images {
     display: block;
+  }
+  .container-skills .conteudo-skills .skills-images #special {
+    margin: 0 -20px;
   }
   .container-skills .conteudo-skills .skills-images img {
     margin: 3px 10px;
@@ -470,6 +507,12 @@ body::-webkit-scrollbar-thumb {
   .container-skills .conteudo-skills .skills-images {
     display: block;
   }
+  .container-skills .conteudo-skills .skills-images #special {
+    margin: 0;
+  }
+  .container-skills .conteudo-skills .skills-images #special-git {
+    margin-right: 20px;
+  }
   .container-skills .conteudo-skills .skills-images img {
     margin: 3px 10px;
   }
@@ -481,6 +524,9 @@ body::-webkit-scrollbar-thumb {
   .container-skills .conteudo-skills {
     width: 55%;
   }
+  .container-skills .conteudo-skills .skills-images #special {
+    margin: 0px -20px;
+  }
 }
 @media (max-width: 464px) {
   .container-skills {
@@ -490,6 +536,9 @@ body::-webkit-scrollbar-thumb {
     width: 45%;
     justify-content: center;
     align-items: center;
+  }
+  .container-skills .conteudo-skills .skills-images #special-git {
+    margin-right: 10px;
   }
 }
 @media (max-width: 388px) {
@@ -504,13 +553,14 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 0px;
     font-size: 1.3rem;
   }
+  .container-skills .conteudo-skills .skills-images #special {
+    height: 65px;
+    width: 90px;
+  }
   .container-skills .conteudo-skills .skills-images img {
     margin: 3px;
     width: 52px;
-    height: 52px;
-  }
-  .container-skills .conteudo-skills .skills-images img#special {
-    height: 42px;
+    height: 47px;
   }
 }
 @media (max-width: 332px) {
@@ -526,7 +576,7 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 307px) {
   .container-skills .conteudo-skills {
     width: 55%;
-    height: 42vh;
+    height: 45vh;
   }
   .container-skills .conteudo-skills .skills-title {
     padding-bottom: 0px;
@@ -538,20 +588,25 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width: 268px) {
   .container-skills .conteudo-skills {
-    width: 60%;
-    height: 40vh;
+    width: 65%;
+    height: 43vh;
   }
   .container-skills .conteudo-skills .skills-title {
     padding-bottom: 0px;
     font-size: 1.3rem;
   }
+  .container-skills .conteudo-skills .skills-images #special {
+    height: 55px;
+    width: 85px;
+    padding-left: 0px;
+  }
+  .container-skills .conteudo-skills .skills-images #special-js {
+    margin-left: 12px;
+  }
   .container-skills .conteudo-skills .skills-images img {
     width: 38px;
-    margin: 1px;
+    margin: 3px;
     height: 38px;
-  }
-  .container-skills .conteudo-skills .skills-images img#special {
-    height: 26px;
   }
 }
 /*Projetos*/
@@ -587,19 +642,32 @@ body::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to right, #cf8901, #422008);
   color: white;
 }
+.conteudo-projetos .cards-projetos .card-style .card-title {
+  text-align: center;
+}
+.conteudo-projetos .cards-projetos .card-style .card-text {
+  color: #111111;
+  font-size: 0.7rem;
+  text-align: justify;
+}
 .conteudo-projetos .cards-projetos .card-style .card-image {
   height: 105px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom: 1px solid #111111;
 }
 .conteudo-projetos .cards-projetos .card-style .btn-card {
   background-color: #f3f3f3;
   color: black;
+  display: flex;
+  align-items: center;
   width: 75%;
-  height: 35px;
+  font-size: 0.8rem;
+  height: 25px;
   margin: auto;
   border: 0;
   border-radius: 5px;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
 }
 .conteudo-projetos .cards-projetos .card-style .btn-card:hover {
   transition: all 0.6s ease;
@@ -611,12 +679,21 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 2px 3px 8px rgba(12, 12, 12, 0.7);
 }
 
-@keyframes cardAnimation {
-  from {
-    transform: rotateX(90deg);
+/*Responsividade - Projetos*/
+@media (max-width: 870px) {
+  .conteudo-projetos .cards-projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
   }
-  to {
-    transform: rotateX(0deg);
+}
+@media (max-width: 450px) {
+  .conteudo-projetos .cards-projetos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
   }
 }
 

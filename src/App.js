@@ -17,7 +17,7 @@ import logoGITHUB from "./assets/images/logo-github.png";
 
 
 import { FiDownload } from "react-icons/fi";
-import { RiProfileLine } from 'react-icons/ri';
+import { HiOutlineAcademicCap, HiOutlineBriefcase } from "react-icons/hi";
 
 import './assets/css/App.css';
 import './assets/css/global.css';
@@ -46,8 +46,8 @@ const App = () => {
         
       <section className='container-sobre'>
         <article className='texto-sobre'>
-          <h1 className='title'><RiProfileLine /> Minhas principais qualidades e um pouco mais sobre mim...</h1>
-          <p className='formacao'>Eu sou estudante de <span className='destaque'>Análise e Desenvolvimento de Sistemas</span> na universidade <span className='destaque'>FACENS</span>, em Sorocaba-SP. Além disso, estudo diariamente a área de Desenvolvimento Web, especificamente o setor <span className='destaque'>Front-End</span>, com a base HTML5, CSS3 e JS, pois adoro desenvolver páginas e softwares utilizando design + programação.</p>
+          <h1 className='title'><HiOutlineAcademicCap /> Minhas principais qualidades e um pouco mais sobre mim...</h1>
+          <p className='formacao'>Eu sou estudante de <span className='destaque'>Análise e Desenvolvimento de Sistemas</span> na universidade <span className='destaque'>FACENS</span>, em Sorocaba-SP. Além disso, estudo diariamente a área de Desenvolvimento Web, especificamente o setor <span className='destaque'>Front-End</span>, com HTML5, CSS3, Bootstrap, SASS, JS e React, pois adoro desenvolver páginas e softwares utilizando design + programação.</p>
         </article>
 
         <div className="cartoes-sobre">
@@ -86,16 +86,16 @@ const App = () => {
       <section className='container-skills'>
         <article className="conteudo-skills">
           <div className="skills-title">
-            <p>Hard Skills</p>
+            <p><HiOutlineBriefcase /> Hard Skills</p>
           </div>
           <div className="skills-images">
-            <img src={logoHTML} alt="Logo HTML" width={60} height={50} />
-            <img src={logoCSS} alt="Logo CSS" width={60} height={50} />
-            <img src={logoSASS} alt="Logo SASS" width={60} height={50} />
-            <img src={logoJS} alt="Logo JS" width={60} height={50} />
-            <img src={logoREACT} alt="Logo REACT" width={80} height={50} id="special"/>
-            <img src={logoGIT} alt="Logo GIT" width={60} height={50} />
-            <img src={logoGITHUB} alt="Logo GITHUB" width={60} height={50} />
+            <img src={logoHTML} alt="Logo HTML" width={55} height={47} />
+            <img src={logoCSS} alt="Logo CSS" width={55} height={47} />
+            <img src={logoSASS} alt="Logo SASS" width={50} height={40} />
+            <img src={logoJS} alt="Logo JS" width={50} height={40} id="special-js" />
+            <img src={logoREACT} alt="Logo REACT" width={100} height={60} id="special"/>
+            <img src={logoGIT} alt="Logo GIT" width={50} height={40} id="special-git"/>
+            <img src={logoGITHUB} alt="Logo GITHUB" width={40} height={40} />
           </div>
         </article>
       </section>

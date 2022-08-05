@@ -21,11 +21,38 @@ body {
     }
 }
 
+/*Images Animation*/
+@keyframes imageAnimation {
+    from {
+        transform: rotateY(90deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
+@keyframes nameAnimation {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+@keyframes cardAnimation {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
 /*Nav e Navbar*/
 #nav-title {
     font-size: 1.3rem;
     font-family: 'Lexend Deca', sans-serif;  
     color: #f3f3f3;
+    animation: nameAnimation 2s;
     
     &:hover { 
         font-weight: bold;
@@ -81,6 +108,7 @@ body {
     margin: auto;
     border: 0;
     border-radius: 10px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
     
     &:hover {
         transition: all 0.6s ease;
@@ -96,6 +124,7 @@ body {
         margin: auto;
         box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
         border-radius: 10px;
+        animation: imageAnimation 1s;
     }
 }
 
@@ -251,7 +280,8 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;    
+        width: 100%;
+        animation: imageAnimation 1s; 
         
         .card-layout {
             display: flex;
@@ -518,7 +548,7 @@ body {
 .container-skills {
     background-image: linear-gradient(to left, #cf8901, #422008);
     min-width: 100%;
-    min-height: 40vh;
+    min-height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -528,7 +558,7 @@ body {
 
     .conteudo-skills {
         background-color: #f3f3f3;
-        width: 60%;
+        width: 45%;
         border: 1px solid #111111;
         box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
         border-radius: 10px;
@@ -536,35 +566,50 @@ body {
         .skills-title {
             color: #422008;
             text-align: center;
-            padding-bottom: 5px;
+            padding-top: 15px;
             font-size: 1.5rem;
         }
 
         .skills-images {
-            margin: 0px 6px 20px 0px;
+            margin: -15px 5px 20px 0px;
             text-align: center;
 
             img {
-                margin: 0 7px;
+                margin: 0 5px;
             }
         }
     }
 }
 
 /*Responsividade - Skills*/
+@media (min-width: 950px) {
+    .container-skills {
+        .conteudo-skills {
+            .skills-images {
+                #special {
+                    margin: 0 -20px;
+                }
+            }
+        }
+    }  
+}
+
 @media (min-width: 760px) and (max-width: 950px) {
     .container-skills {
         .conteudo-skills {
-            width: 55%;
+            width: 65%;
 
             .skills-images {
                 display: block;
+                
+                #special {
+                    margin: 0 -20px;
+                }
                 
                 img {
                     margin: 3px 10px;
                 }
             }
-
         }
     }    
 }
@@ -577,6 +622,14 @@ body {
 
             .skills-images {
                 display: block;
+
+                #special {
+                    margin: 0;
+                }
+
+                #special-git {
+                    margin-right: 20px;
+                }
                 
                 img {
                     margin: 3px 10px;
@@ -591,6 +644,12 @@ body {
 
         .conteudo-skills {
             width: 55%;
+
+            .skills-images {
+                #special {
+                    margin: 0px -20px;
+                }
+            }
         }
     }    
 }
@@ -602,6 +661,12 @@ body {
             width: 45%;
             justify-content: center;
             align-items: center;
+
+            .skills-images {
+                #special-git {
+                    margin-right: 10px;
+                }
+            }
         }
     }    
 }
@@ -619,14 +684,16 @@ body {
             }
 
             .skills-images {
+                #special {
+                    height: 65px;
+                    width: 90px;
+                }
+
                 img {
                     margin: 3px;
                     width: 52px;
-                    height: 52px;
+                    height: 47px;
 
-                    &#special {
-                        height: 42px;
-                    }
                 }
             }
         }
@@ -651,7 +718,7 @@ body {
     .container-skills {
         .conteudo-skills {
             width: 55%;
-            height: 42vh;
+            height: 45vh;
 
             .skills-title {
                 padding-bottom: 0px;
@@ -669,8 +736,8 @@ body {
 @media (max-width: 268px) {
     .container-skills {
         .conteudo-skills {
-            width: 60%;
-            height: 40vh;
+            width: 65%;
+            height: 43vh;
 
             .skills-title {
                 padding-bottom: 0px;
@@ -678,14 +745,19 @@ body {
             }
 
             .skills-images {
+                #special {
+                    height: 55px;
+                    width: 85px;
+                    padding-left: 0px;
+                }
+
+                #special-js {
+                    margin-left: 12px;
+                }
                 img {
                     width: 38px;
-                    margin: 1px;
-                    height: 38px;
-                    
-                    &#special {
-                        height: 26px;
-                    }
+                    margin: 3px;
+                    height: 38px;                    
                 }
             }
         }
@@ -727,20 +799,35 @@ body {
             background-image: linear-gradient(to right, #cf8901, #422008);
             color: white;
 
+            .card-title {
+                text-align: center;
+            }
+
+            .card-text {
+                color: #111111;
+                font-size: 0.7rem;
+                text-align: justify;
+            }
+
             .card-image {
                 height: 105px;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
+                border-bottom: 1px solid #111111;
             }
 
             .btn-card {
                 background-color: #f3f3f3;
                 color: black;
+                display: flex;
+                align-items: center;
                 width: 75%;
-                height: 35px;
+                font-size: 0.8rem;
+                height: 25px;
                 margin: auto;
                 border: 0;
                 border-radius: 5px;
+                box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
                 
                 &:hover {
                     transition: all 0.6s ease;
@@ -758,12 +845,25 @@ body {
     }
 }
 
-@keyframes cardAnimation {
-    from {
-        transform: rotateX(90deg);
+/*Responsividade - Projetos*/
+@media (max-width: 870px) {
+    .conteudo-projetos {
+        .cards-projetos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+        }
     }
-    to {
-        transform: rotateX(0deg);
+}
+@media (max-width: 450px) {
+    .conteudo-projetos {
+        .cards-projetos {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            align-items: center;
+        }
     }
 }
 
