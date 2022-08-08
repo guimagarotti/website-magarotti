@@ -89,13 +89,13 @@ const App = () => {
             <p><HiOutlineBriefcase /> Hard Skills</p>
           </div>
           <div className="skills-images">
-            <img src={logoHTML} alt="Logo HTML" width={55} height={47} />
-            <img src={logoCSS} alt="Logo CSS" width={55} height={47} />
+            <img src={logoHTML} alt="Logo HTML" width={53} height={45} className="new-HW" />
+            <img src={logoCSS} alt="Logo CSS" width={53} height={45} className="new-HW" />
             <img src={logoSASS} alt="Logo SASS" width={50} height={40} />
-            <img src={logoJS} alt="Logo JS" width={50} height={40} id="special-js" />
-            <img src={logoREACT} alt="Logo REACT" width={100} height={60} id="special"/>
-            <img src={logoGIT} alt="Logo GIT" width={50} height={40} id="special-git"/>
-            <img src={logoGITHUB} alt="Logo GITHUB" width={40} height={40} />
+            <img src={logoJS} alt="Logo JS" width={50} height={40} />
+            <img src={logoREACT} alt="Logo REACT" width={50} height={40} />
+            <img src={logoGIT} alt="Logo GIT" width={50} height={40} />
+            <img src={logoGITHUB} alt="Logo GITHUB" width={45} height={40} />
           </div>
         </article>
       </section>
