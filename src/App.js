@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from './components/Header';
 import Cards from './components/Cards';
+import Footer from './components/Footer';
 import { Figure } from 'react-bootstrap';
 
 import profileImage from "./assets/images/profile.jpg";
@@ -29,7 +30,7 @@ const App = () => {
       <section className='container'>
         <article className='info'>
           <p className='info-item'>Olá, eu sou <br></br><strong id='name'>Guilherme Magarotti</strong><br></br>Desenvolvedor Front-End</p>
-          <button id="cv-button">Currículo <FiDownload /></button>
+          <button id="cv-button"><a href="https://drive.google.com/file/d/1DW2oHAzoc11wEgYKqB0v6l5fTsbzIciP/view?usp=sharing" target="_blank" rel="noreferrer">Currículo <FiDownload /></a></button>
         </article>
         
         <article className='image'>
@@ -99,8 +100,9 @@ const App = () => {
           </div>
         </article>
       </section>
-
+      
       <Cards />
+      <Footer />
     </>
   );
 }
