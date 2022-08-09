@@ -694,8 +694,8 @@ body {
 @media (max-width: 460px) {
     .container-skills {
         .conteudo-skills {
-            width: 35vh;
-            height: 18vh;
+            width: 67vh;
+            height: 37vh;
 
             .skills-images {
                 img {
@@ -708,8 +708,8 @@ body {
 @media (max-width: 375px) {
     .container-skills {
         .conteudo-skills {
-            width: 40vh;
-            height: 25vh;
+            width: 56vh;
+            height: 36vh;
 
             .skills-images {
                 img {
@@ -722,23 +722,24 @@ body {
 @media (max-width: 290px) {
     .container-skills {
         .conteudo-skills {
-            width: 35vh;
-            height: 23vh;
+            width: 45vh;
+            height: 29vh;
 
             .skills-title {
                 p {
-                    margin-bottom: 5px;   
+                    margin-bottom: 5px;
+                    font-size: 1.2rem;
                 }
             }
             .skills-images {
                 img {
-                    height: 35px;
-                    width: 45px;
+                    height: 30px;
+                    width: 40px;
                     margin: 5px 5px 3px 3px;
 
                     &.new-HW {
-                        width: 48px;
-                        height: 40px; 
+                        width: 43px;
+                        height: 35px; 
                     }
                 }
             }
