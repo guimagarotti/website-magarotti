@@ -48,23 +48,25 @@ body {
 }
 
 /*Nav e Navbar*/
-#nav-title {
-    font-size: 1.3rem;
-    font-family: 'Lexend Deca', sans-serif;  
-    color: #f3f3f3;
-    animation: nameAnimation 2s;
-    
-    &:hover { 
-        font-weight: bold;
+.navbar-content {
+    #nav-title {
+        font-size: 1.3rem;
+        font-family: 'Lexend Deca', sans-serif;  
+        color: #f3f3f3;
+        animation: nameAnimation 2s;
+        
+        &:hover { 
+            font-weight: bold;
+        }
     }
-}
-
-.nav-text {
-    font-family: 'Lexend Deca', sans-serif;
     
-    &:hover {
-        color: #fff;
-        font-weight: bold;
+    .nav-text {
+        font-family: 'Lexend Deca', sans-serif;
+        
+        &:hover {
+            color: #fff;
+            font-weight: bold;
+        }
     }
 }
 

@@ -27,7 +27,7 @@ const App = () => {
   return (
     <>     
       <Header />
-      <section className='container'>
+      <section className='container' id="inicio">
         <article className='info'>
           <p className='info-item'>Olá, eu sou <br></br><strong id='name'>Guilherme Magarotti</strong><br></br>Desenvolvedor Front-End</p>
           <button id="cv-button"><a href="https://drive.google.com/file/d/1DW2oHAzoc11wEgYKqB0v6l5fTsbzIciP/view?usp=sharing" target="_blank" rel="noreferrer">Currículo <FiDownload /></a></button>
@@ -45,7 +45,7 @@ const App = () => {
         </article>
       </section>
         
-      <section className='container-sobre'>
+      <section className='container-sobre' id="sobre">
         <article className='texto-sobre'>
           <h1 className='title'><HiOutlineAcademicCap /> Minhas principais qualidades e um pouco mais sobre mim...</h1>
           <p className='formacao'>Eu sou estudante de <span className='destaque'>Análise e Desenvolvimento de Sistemas</span> na universidade <span className='destaque'>FACENS</span>, em Sorocaba-SP. Além disso, estudo diariamente a área de Desenvolvimento Web, especificamente o setor <span className='destaque'>Front-End</span>, com HTML5, CSS3, Bootstrap, SASS, JS e React, pois adoro desenvolver páginas e softwares utilizando design + programação.</p>
@@ -77,14 +77,14 @@ const App = () => {
                 <p className='list-title'>Hobbies</p>
                 <li className='list-item'>Video-games</li>
                 <li className='list-item'>Futebol</li>
-                <li className='list-item'>Filmes / Séries</li>
+                <li className='list-item'>Filmes e Séries</li>
               </ul>
             </div>
           </article>
         </div>
       </section>
 
-      <section className='container-skills'>
+      <section className='container-skills' id="skills">
         <article className="conteudo-skills">
           <div className="skills-title">
             <p><HiOutlineBriefcase /> Hard Skills</p>

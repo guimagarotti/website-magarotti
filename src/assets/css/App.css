@@ -43,20 +43,19 @@ body::-webkit-scrollbar-thumb {
   }
 }
 /*Nav e Navbar*/
-#nav-title {
+.navbar-content #nav-title {
   font-size: 1.3rem;
   font-family: "Lexend Deca", sans-serif;
   color: #f3f3f3;
   animation: nameAnimation 2s;
 }
-#nav-title:hover {
+.navbar-content #nav-title:hover {
   font-weight: bold;
 }
-
-.nav-text {
+.navbar-content .nav-text {
   font-family: "Lexend Deca", sans-serif;
 }
-.nav-text:hover {
+.navbar-content .nav-text:hover {
   color: #fff;
   font-weight: bold;
 }

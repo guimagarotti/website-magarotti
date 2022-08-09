@@ -5,7 +5,7 @@ import { FaRegHandPointDown } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className="container-footer">
+        <div className="container-footer" id="contato">
             <div className="conteudo-footer">
                 <div className="footer-title">
                     <h1>Entre em contato abaixo</h1>
