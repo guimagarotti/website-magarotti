@@ -18,6 +18,7 @@ Esse projeto é o meu portfólio para alocar realizações pessoais, ou seja, um
 
 ## Contato 💬:
 - [Acesse meu LinkedIn](https://www.linkedin.com/in/guilherme-cambi-magarotti-16177522b/)
+- [Acesse o Projeto](https://guimagarotti.github.io/website-magarotti/)
 
 ### Instalação 🔌:
 Clone esse projeto com seu Git Bash, utilizando o comando abaixo:
