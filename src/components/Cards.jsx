@@ -4,7 +4,7 @@ import { Button, Card } from 'react-bootstrap';
 import { AiOutlineBarChart } from 'react-icons/ai';
 import Proj01 from "../assets/images/proj-cep.png";
 import Proj02 from "../assets/images/proj-calc.png";
-import Proj03 from "../assets/images/proj-spotify.png";
+import Proj03 from "../assets/images/proj-e-commerce.png";
 import Proj04 from "../assets/images/proj-estac.png";
 
 const Cards = () => {
@@ -41,12 +41,12 @@ const Cards = () => {
           <Card className="card-style" style={{ width: '13rem' }}>
             <Card.Img src={Proj03} class="card-image" />
             <Card.Body>
-              <Card.Title className="card-title">Clone do Spotify</Card.Title>
+              <Card.Title className="card-title">E-Commerce</Card.Title>
               <Card.Text className="card-text">
-                Projeto de <strong>clone</strong> da interface inicial do <strong>Spotify</strong>, criada com responsividade para múltipos dispositivos, utilizando <strong>HTML5, CSS3 Grid e Flexbox.</strong>
+                Projeto de uma <strong>página</strong> de um E-Commerce, no caso, uma loja <strong>virtual</strong> e <strong>fictícia</strong>, para divulgar produtos, utilizando <strong>HTML5, CSS3, SASS e Bootstrap</strong>.
               </Card.Text>
               <Button className="btn-card">
-                <a href="https://guimagarotti.github.io/clone-spotify/" target="_blank" rel="noreferrer">Acesse o projeto!</a>
+                <a href="https://guimagarotti.github.io/e-commerce/" target="_blank" rel="noreferrer">Acesse o projeto!</a>
               </Button>
             </Card.Body>
           </Card>
